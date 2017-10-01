@@ -10,6 +10,9 @@
     "watch": "./node_modules/nodemon/bin/nodemon.js app.js",
     "eslint": "./node_modules/.bin/eslint *.js routes/*.js"
   },
+  "engines": {
+    "node": "8.1.0"
+  },
   "dependencies": {
     "koa": "^2.2.0",
     "koa-router": "^7.2.0",
