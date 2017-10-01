@@ -19,7 +19,7 @@ clubService.getAllClubs = () => {
   result.push(Object.assign({}, clubs.endpoints.hellas, { tag: 'hellas' }))
 
   let enskede = clubs.endpoints.enskede
-  result.push(Object.assign({}, clubs.endpoints.hellas, { tag: 'enskede', url: enskede.bookingUrl }))
+  result.push(Object.assign({}, enskede, { tag: 'enskede', url: enskede.bookingUrl }))
 
   return result
 }
