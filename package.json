@@ -2,7 +2,7 @@
   "name": "tennistider.api",
   "version": "0.0.1",
   "main": "app.js",
-  "repository": "https://github.com/sunker/tennistider.scraper",
+  "repository": "https://github.com/sunker/tennistider.api",
   "author": "Erik Sundell",
   "license": "MIT",
   "scripts": {
