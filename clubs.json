@@ -372,7 +372,7 @@
           "include": true,
           "name": "Tennisstadion",
           "image": "tennisstadion.png",
-          "myCourtClubId": "333",
+          "myCourtClubId": "389",
           "bookingUrl": "http://www.mycourt.se/",
           "location": "Stockholm",
           "courts": {
@@ -387,7 +387,7 @@
           "id": 22,
           "include": false,
           "image": "stockholmstennishall.png",
-          "myCourtClubId": "389",
+          "myCourtClubId": "333",
           "bookingUrl": "http://www.mycourt.se/",
           "location": "Stockholm",
           "courts": {
