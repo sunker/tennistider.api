@@ -3,6 +3,7 @@ require('./models/Slot')
 require('dotenv').config()
 const Koa = require('koa'),
   Router = require('koa-router'),
+  bodyparser = require('koa-bodyparser'),
   koaErrorhandler = require('./middleware/errorHandler'),
   koaHealth = require('./middleware/health'),
   mongoose = require('mongoose'),
@@ -12,6 +13,7 @@ const Koa = require('koa'),
   app = new Koa(),
   router = new Router()
 
+app.use(bodyparser())
 app.use(koaHealth)
 app.use(koaErrorhandler)
 router.use('/api/user', userRoute.routes())

@@ -14,14 +14,16 @@
     "node": "8.1.0"
   },
   "dependencies": {
+    "cheerio": "^0.22.0",
+    "dotenv": "^4.0.0",
     "koa": "^2.2.0",
+    "koa-bodyparser": "^4.2.0",
     "koa-router": "^7.2.0",
     "koa-validate": "^1.0.7",
-    "cheerio": "^0.22.0",
+    "moment": "^2.19.1",
     "mongoose": "^4.6.6",
     "selenium-webdriver": "^3.0.1",
-    "underscore": "^1.8.3",
-    "dotenv": "^4.0.0"
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "eslint": "^4.1.1",

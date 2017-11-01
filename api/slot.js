@@ -1,19 +1,27 @@
 const router = require('koa-router')(),
   mongoose = require('mongoose'),
-  User = mongoose.model('user'),
-  Slot = mongoose.model('slot'),
-  _ = require('underscore')
+  Slot = mongoose.model('slot')
 
-router.get('/list', async(ctx, next) => {
-  ctx.body = await User.getAll()
+router.get('/filter', async (ctx, next) => {
+  ctx.body = await Slot.getByDate(ctx.query)
   await next()
 })
 
-router.get('/list-current', async(ctx, next) => {
-  const users = await User.getAll()
-  const slots = await Slot.getAll()
-  const uniqueSlots = _.unique(_.flatten(users.map(user => user.slotPreference.map(x => x.clubId)))).filter(clubId => clubId > 0)
-  ctx.body = sl
+router.delete('/many', async (ctx, next) => {
+  ctx.request.body.forEach((slot) => {
+    Slot.remove({ _id: slot._id })
+  })
+  ctx.status = 200
+  await next()
+})
+
+router.post('/many', async (ctx, next) => {
+  try {
+    ctx.body = await Slot.saveMany(ctx.request.body).then(x => x.filter(res => res))
+  } catch (error) {
+    console.log(error)
+  }
+  ctx.status = 200
   await next()
 })
 
