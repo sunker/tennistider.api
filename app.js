@@ -26,7 +26,6 @@ mongoose.connect(process.env.MONGO_CLIENT, { useMongoClient: true }).then(
     console.log('Could not connect to database: ', err)
     process.exit(1)
   })
-
 app.use(router.routes())
 app.use(router.allowedMethods())
 app.listen(process.env.PORT || '3011')
