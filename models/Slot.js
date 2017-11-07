@@ -1,6 +1,5 @@
 const mongoose = require('mongoose'),
   TimeSlot = require('./TimeSlot'),
-  moment = require('moment'),
   Schema = mongoose.Schema
 
 const slotSchema = new Schema({
