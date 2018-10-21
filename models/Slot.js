@@ -23,7 +23,7 @@ const slotSchema = new Schema({
   courtNumber: Number,
   surface: String,
   link: String,
-  type: String
+  createdAt: { type: Date, expires: '30d', default: Date.now }
 })
 
 slotSchema.methods = {
@@ -140,6 +140,17 @@ slotSchema.statics = {
     }
     return new Promise((resolve, reject) => {
       Slot.find(query, function (err, slots) {
+        if (err) {
+          reject(err)
+        } else {
+          resolve(slots)
+        }
+      })
+    })
+  },
+  getUpcoming: () => {
+    return new Promise((resolve, reject) => {
+      Slot.find({ date: { $gte: new Date() }}, function (err, slots) {
         if (err) {
           reject(err)
         } else {

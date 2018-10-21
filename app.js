@@ -10,9 +10,11 @@ const Koa = require('koa'),
   userRoute = require('./api/user'),
   slotRoute = require('./api/slot'),
   clubRoute = require('./api/club'),
+  cors = require('koa2-cors'),
   app = new Koa(),
   router = new Router()
 
+app.use(cors());
 app.use(bodyparser())
 app.use(koaHealth)
 app.use(koaErrorhandler)
