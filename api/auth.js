@@ -94,7 +94,8 @@ router.post('/login', async (ctx, next) => {
         name: user.name,
         email: user.email,
         avatar: user.avatar,
-        favourites: user.slotPreference.toObject()
+        clubSettings: user.slotPreference.toObject(),
+        locations: user.locations
       };
       const token = jwt.sign(payload, 'secret', {
         expiresIn: '900d'
@@ -103,7 +104,8 @@ router.post('/login', async (ctx, next) => {
         success: true,
         token: `Bearer ${token}`,
         email: user.email,
-        slotPreference: user.slotPreference.toObject()
+        slotPreference: user.slotPreference.toObject(),
+        locations: user.locations
       };
     } else {
       errors.password = 'Felaktigt lösenord';

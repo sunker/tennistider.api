@@ -1,7 +1,7 @@
-const mongoose = require("mongoose"),
-  { findWhere } = require("underscore"),
+const mongoose = require('mongoose'),
+  { findWhere } = require('underscore'),
   Schema = mongoose.Schema,
-  TimeSlot = require("./TimeSlot");
+  TimeSlot = require('./TimeSlot');
 
 const userSchema = new Schema({
   id: {
@@ -29,10 +29,11 @@ const userSchema = new Schema({
       days: [[]]
     }
   ],
+  locations: [],
   firstTimeUser: Boolean
 });
 
-userSchema.pre("save", function(next) {
+userSchema.pre('save', function(next) {
   var user = this;
 
   if (
@@ -130,7 +131,7 @@ userSchema.methods = {
           reject(err);
         } else {
           resolve(user);
-          console.log("Weekly report saved");
+          console.log('Weekly report saved');
         }
       });
     });
@@ -184,7 +185,7 @@ userSchema.statics = {
           reject(err);
         } else {
           resolve(user);
-          console.log("User created");
+          console.log('User created');
         }
       });
     });
@@ -199,6 +200,6 @@ Date.prototype.getWeek = function() {
   );
 };
 
-const User = mongoose.model("user", userSchema);
+const User = mongoose.model('user', userSchema);
 
 module.exports = User;
