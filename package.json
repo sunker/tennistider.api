@@ -11,8 +11,11 @@
     "eslint": "./node_modules/.bin/eslint *.js routes/*.js"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "cheerio": "^0.22.0",
     "dotenv": "^4.0.0",
+    "gravatar": "^1.6.0",
+    "jsonwebtoken": "^8.3.0",
     "koa": "^2.2.0",
     "koa-bodyparser": "^4.2.0",
     "koa-router": "^7.2.0",
@@ -21,7 +24,8 @@
     "moment": "^2.19.1",
     "mongoose": "^4.6.6",
     "selenium-webdriver": "^3.0.1",
-    "underscore": "^1.8.3"
+    "underscore": "^1.8.3",
+    "validator": "^10.8.0"
   },
   "devDependencies": {
     "eslint": "^4.1.1",
