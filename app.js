@@ -5,6 +5,7 @@ const Koa = require('koa'),
   Router = require('koa-router'),
   bodyparser = require('koa-bodyparser'),
   koaErrorhandler = require('./middleware/errorHandler'),
+  metrics = require('./middleware/metrics'),
   koaHealth = require('./middleware/health'),
   mongoose = require('mongoose'),
   userRoute = require('./api/user'),
@@ -18,6 +19,7 @@ app.use(cors());
 app.use(bodyparser());
 app.use(koaHealth);
 app.use(koaErrorhandler);
+app.use(metrics);
 router.use('/api/user', userRoute.routes());
 router.use('/api/slot', slotRoute.routes());
 router.use('/api/club', clubRoute.routes());
