@@ -1,11 +1,12 @@
 const jwt = require('jsonwebtoken');
+const User = require('../models/User');
 
 const error = {
   success: false,
   message: 'Failed to authenticate token.'
 };
 
-const verifyToken = token =>
+const verifyToken = (token, ctx) =>
   new Promise(async (resolve, reject) => {
     if (token) {
       jwt.verify(token, 'secret', function(err, decoded) {
@@ -25,7 +26,8 @@ module.exports = async (ctx, next) => {
     ctx.request.body.token ||
     ctx.request.headers['authorization'].replace('Bearer ', '');
   try {
-    ctx.body = await verifyToken(token);
+    const decoded = await verifyToken(token, ctx);
+    ctx.request.user = await User.findOne({ email: decoded.email });
     await next();
   } catch (error) {
     ctx.body = error;

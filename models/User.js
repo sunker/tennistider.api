@@ -3,35 +3,38 @@ const mongoose = require('mongoose'),
   Schema = mongoose.Schema,
   TimeSlot = require('./TimeSlot');
 
-const userSchema = new Schema({
-  id: {
-    type: Schema.ObjectId
+const userSchema = new Schema(
+  {
+    id: {
+      type: Schema.ObjectId
+    },
+    active: Boolean,
+    email: {
+      type: String,
+      required: true,
+      unique: true,
+      index: {
+        unique: true
+      }
+    },
+    avatar: {
+      type: String
+    },
+    password: {
+      type: String
+    },
+    latestWeeklyReport: Number,
+    slotPreference: [
+      {
+        clubId: Number,
+        days: [[]]
+      }
+    ],
+    locations: [],
+    firstTimeUser: Boolean
   },
-  active: Boolean,
-  email: {
-    type: String,
-    required: true,
-    unique: true,
-    index: {
-      unique: true
-    }
-  },
-  avatar: {
-    type: String
-  },
-  password: {
-    type: String
-  },
-  latestWeeklyReport: Number,
-  slotPreference: [
-    {
-      clubId: Number,
-      days: [[]]
-    }
-  ],
-  locations: [],
-  firstTimeUser: Boolean
-});
+  { usePushEach: true }
+);
 
 userSchema.pre('save', function(next) {
   var user = this;
