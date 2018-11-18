@@ -8,7 +8,7 @@ const getUpcomingSlots = async () => {
   if (slots) {
     return slots;
   } else {
-    slots = (await Slot.getUpcoming()).slice(0, 300);
+    slots = await Slot.getUpcoming(); //.slice(0, 300);
     cache.put('upcoming-slots', slots, 1000 * 60 * 60);
     return slots;
   }
@@ -36,13 +36,15 @@ router.delete('/many', async (ctx, next) => {
     })
   );
   const removedSlots = await Promise.all(
-    savedSlots.filter(x => x).map(savedSlot => {
-      return new Promise(resolve => {
-        savedSlot.remove((err, slot) => {
-          resolve(slot);
+    savedSlots
+      .filter(x => x)
+      .map(savedSlot => {
+        return new Promise(resolve => {
+          savedSlot.remove((err, slot) => {
+            resolve(slot);
+          });
         });
-      });
-    })
+      })
   );
   console.log(
     `${ctx.request.body[0].clubName}: ${
