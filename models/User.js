@@ -27,7 +27,8 @@ const userSchema = new Schema(
     slotPreference: [
       {
         clubId: Number,
-        days: [[]]
+        days: [[]],
+        inactivated: Boolean
       }
     ],
     locations: [],

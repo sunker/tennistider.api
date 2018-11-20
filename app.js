@@ -3,6 +3,7 @@ require('./models/Slot');
 require('dotenv').config();
 const Koa = require('koa'),
   Router = require('koa-router'),
+  accesslog = require('koa-accesslog'),
   bodyparser = require('koa-bodyparser'),
   koaErrorhandler = require('./middleware/errorHandler'),
   metrics = require('./middleware/metrics'),
@@ -15,6 +16,7 @@ const Koa = require('koa'),
   cors = require('koa2-cors');
 (app = new Koa()), (router = new Router());
 
+app.use(accesslog());
 app.use(cors());
 app.use(bodyparser());
 app.use(koaHealth);
