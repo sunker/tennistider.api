@@ -339,6 +339,60 @@
         "url": "https://www.matchi.se/book/schedule?facilityId=18&date=[year]-[month]-[day]&sport=1&indoor=true&wl=",
         "daysAhead": 14,
         "location": "Göteborg"
+      },
+      {
+        "id": 54,
+        "include": false,
+        "name": "Smedslättens LTK",
+        "image": "smedslatten.jpg",
+        "url": "https://www.matchi.se/book/schedule?facilityId=197&date=[year]-[month]-[day]&sport=1&indoor=true&wl=",
+        "daysAhead": 14,
+        "location": "Stockholm"
+      },
+      {
+        "id": 55,
+        "include": false,
+        "name": "Catella Arena",
+        "image": "catella.jpg",
+        "url": "https://www.matchi.se/book/schedule?facilityId=120&date=[year]-[month]-[day]&sport=1&indoor=true&wl=",
+        "daysAhead": 14,
+        "location": "Stockholm"
+      },
+      {
+        "id": 56,
+        "include": false,
+        "name": "Järfälla Tennis",
+        "image": "jarfalla.jpg",
+        "url": "https://www.matchi.se/book/schedule?facilityId=167&date=[year]-[month]-[day]&sport=1&indoor=true&wl=",
+        "daysAhead": 14,
+        "location": "Stockholm"
+      },
+      {
+        "id": 57,
+        "include": false,
+        "name": "Näsbyparks TK",
+        "image": "nasbypark.jpg",
+        "url": "https://www.matchi.se/book/schedule?facilityId=169&date=[year]-[month]-[day]&sport=1&indoor=true&wl=",
+        "daysAhead": 14,
+        "location": "Stockholm"
+      },
+      {
+        "id": 58,
+        "include": false,
+        "name": "Vaxholms TK",
+        "image": "vaxholm.jpg",
+        "url": "https://www.matchi.se/book/schedule?facilityId=210&date=[year]-[month]-[day]&sport=1&indoor=true&wl=",
+        "daysAhead": 14,
+        "location": "Stockholm"
+      },
+      {
+        "id": 59,
+        "include": false,
+        "name": "Åkersberga TK",
+        "image": "akersberga.jpg",
+        "url": "https://www.matchi.se/book/schedule?facilityId=136&date=[year]-[month]-[day]&sport=1&indoor=true&wl=",
+        "daysAhead": 14,
+        "location": "Stockholm"
       }
     ],
     "enskede": {
@@ -515,6 +569,70 @@
             "9-10": {
               "surface": "grus",
               "indoor": false
+            }
+          }
+        },
+        {
+          "name": "Gärdets Squash",
+          "id": 49,
+          "include": true,
+          "image": "gardetssquash.jpg",
+          "myCourtClubId": "328",
+          "bookingUrl": "http://www.mycourt.se/",
+          "location": "Stockholm",
+          "sport": "squash",
+          "courts": {
+            "1-4": {
+              "surface": "squash",
+              "indoor": true
+            }
+          }
+        },	
+        {
+          "name": "Huddinge TK",
+          "id": 50,
+          "include": true,
+          "image": "huddingetk.jpg",
+          "myCourtClubId": "525",
+          "bookingUrl": "http://www.mycourt.se/",
+          "location": "Stockholm",
+          "sport": "squash",
+          "courts": {
+            "1-4": {
+              "surface": "hardcourt",
+              "indoor": true
+            }
+          }
+        },
+        {
+          "name": "Intersquash Club",
+          "id": 51,
+          "include": true,
+          "image": "intersquash.jpg",
+          "myCourtClubId": "325",
+          "bookingUrl": "http://www.mycourt.se/",
+          "location": "Stockholm",
+          "sport": "squash",
+          "courts": {
+            "1-8": {
+              "surface": "hardcourt",
+              "indoor": true
+            }
+          }
+        },
+        {
+          "name": "Solna Tenniscenter AB",
+          "id": 52,
+          "include": true,
+          "image": "solnatenniscenter.jpg",
+          "myCourtClubId": "388",
+          "bookingUrl": "http://www.mycourt.se/",
+          "location": "Stockholm",
+          "sport": "tennis",
+          "courts": {
+            "1-8": {
+              "surface": "hardcourt",
+              "indoor": true
             }
           }
         }
