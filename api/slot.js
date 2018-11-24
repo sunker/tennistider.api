@@ -15,7 +15,19 @@ const getUpcomingSlots = async () => {
 };
 
 router.get('/upcoming', async (ctx, next) => {
-  ctx.body = await getUpcomingSlots();
+  ctx.body = ctx.request.query.clubs
+    ? await Slot.getUpcomingByClubs(ctx.request.query.clubs.split(','))
+    : await getUpcomingSlots();
+  await next();
+});
+
+router.get('/upcoming-count', async (ctx, next) => {
+  ctx.body = await Slot.countUpcoming();
+  await next();
+});
+
+router.get('/upcoming-by-clubs', async (ctx, next) => {
+  ctx.body = await Slot.getUpcomingByClubs(ctx.request.query.clubs.split(','));
   await next();
 });
 
