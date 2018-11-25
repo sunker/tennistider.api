@@ -45,7 +45,7 @@
       {
         "id": 8,
         "include": false,
-        "name": "PDL Center",
+        "name": "PDL Center Frihamnen",
         "location": "Stockholm",
         "image": "pdlcenter.jpg",
         "url": "https://www.matchi.se/book/listSlots?wl=&sport=5&facility=81&date=[year]-[month]-[day]",
@@ -68,6 +68,87 @@
         "url": "https://www.matchi.se/book/listSlots?wl=&sport=5&facility=207&date=[year]-[month]-[day]",
         "daysAhead": 14,
         "location": "Göteborg"
+      },
+      {
+        "id": 65,
+        "include": false,
+        "name": "PADEL ZENTER Årsta",
+        "image": "padelzenter.jpg",
+        "url": "https://www.matchi.se/book/listSlots?wl=&sport=5&facility=204&date=[year]-[month]-[day]",
+        "daysAhead": 14,
+        "location": "Stockholm"
+      },
+      {
+        "id": 66,
+        "include": false,
+        "name": "Padel Flemingsberg",
+        "image": "PadelFlemingsberg.jpg",
+        "url": "https://www.matchi.se/book/listSlots?wl=&sport=5&facility=249&date=[year]-[month]-[day]",
+        "daysAhead": 14,
+        "location": "Stockholm"
+      },
+      {
+        "id": 67,
+        "include": false,
+        "name": "Padel Lidingö",
+        "image": "LidingöLidingö.jpg",
+        "url": "https://www.matchi.se/book/listSlots?wl=&sport=5&facility=251&date=[year]-[month]-[day]",
+        "daysAhead": 14,
+        "location": "Stockholm"
+      },
+      {
+        "id": 68,
+        "include": false,
+        "name": "Court1 - Nacka Padel Club & Gym",
+        "image": "Court1.jpg",
+        "url": "https://www.matchi.se/book/listSlots?wl=&sport=5&facility=148&date=[year]-[month]-[day]",
+        "daysAhead": 14,
+        "location": "Stockholm"
+      },
+      {
+        "id": 69,
+        "include": false,
+        "name": "M3 Gym & Padel Lidingö",
+        "image": "M3GymPadelLidingö.jpg",
+        "url": "https://www.matchi.se/book/listSlots?wl=&sport=5&facility=292&date=[year]-[month]-[day]",
+        "daysAhead": 14,
+        "location": "Stockholm"
+      },
+      {
+        "id": 70,
+        "include": false,
+        "name": "Järfälla Padel Club",
+        "image": "JarfallaPadelClub.jpg",
+        "url": "https://www.matchi.se/book/listSlots?wl=&sport=5&facility=188&date=[year]-[month]-[day]",
+        "daysAhead": 14,
+        "location": "Stockholm"
+      },
+      {
+        "id": 71,
+        "include": false,
+        "name": "Popup Padel Kungsängen",
+        "image": "PopupPadelKungsangen.jpg",
+        "url": "https://www.matchi.se/book/listSlots?wl=&sport=5&facility=229&date=[year]-[month]-[day]",
+        "daysAhead": 14,
+        "location": "Stockholm"
+      },
+      {
+        "id": 72,
+        "include": false,
+        "name": "Vallentuna Bollhall",
+        "image": "VallentunaBollhall.jpg",
+        "url": "https://www.matchi.se/book/listSlots?wl=&sport=5&facility=182&date=[year]-[month]-[day]",
+        "daysAhead": 14,
+        "location": "Stockholm"
+      },
+      {
+        "id": 73,
+        "include": false,
+        "name": "Norrtälje Padelcenter",
+        "image": "NorrtaljePadelcenter.jpg",
+        "url": "https://www.matchi.se/book/listSlots?wl=&sport=5&facility=225&date=[year]-[month]-[day]",
+        "daysAhead": 14,
+        "location": "Stockholm"
       }
     ],
     "matchi": [{
