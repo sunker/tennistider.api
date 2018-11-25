@@ -37,7 +37,6 @@ router.get('/filter', async (ctx, next) => {
 });
 
 router.delete('/many', async (ctx, next) => {
-  // console.log(ctx.request.body[0].clubName)
   const savedSlots = await Promise.all(
     ctx.request.body.map(slot => {
       return new Promise(resolve => {

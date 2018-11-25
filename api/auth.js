@@ -93,9 +93,7 @@ router.post('/login', async (ctx, next) => {
         id: user.id,
         name: user.name,
         email: user.email,
-        avatar: user.avatar,
-        clubSettings: user.slotPreference.toObject(),
-        locations: user.locations
+        avatar: user.avatar
       };
       const token = jwt.sign(payload, 'secret', {
         expiresIn: '900d'
