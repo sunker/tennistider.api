@@ -1,7 +1,6 @@
 const router = require('koa-router')(),
   mongoose = require('mongoose'),
   User = mongoose.model('user'),
-  Slot = mongoose.model('slot'),
   clubService = require('../clubService'),
   _ = require('underscore'),
   authenticate = require('../middleware/authenticate');
