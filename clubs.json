@@ -91,7 +91,7 @@
         "id": 67,
         "include": false,
         "name": "Padel Lidingö",
-        "image": "LidingöLidingö.jpg",
+        "image": "LidingoLidingo.jpg",
         "url": "https://www.matchi.se/book/listSlots?wl=&sport=5&facility=251&date=[year]-[month]-[day]",
         "daysAhead": 14,
         "location": "Stockholm"
@@ -149,6 +149,15 @@
         "url": "https://www.matchi.se/book/listSlots?wl=&sport=5&facility=225&date=[year]-[month]-[day]",
         "daysAhead": 14,
         "location": "Stockholm"
+      },
+      {
+        "id": 74,
+        "include": false,
+        "name": "Padelfabriken",
+        "image": "Padelfabriken.jpg",
+        "url": "https://www.matchi.se/book/listSlots?wl=&sport=5&facility=207&date=[year]-[month]-[day]",
+        "daysAhead": 14,
+        "location": "Göteborg"
       }
     ],
     "matchi": [{
