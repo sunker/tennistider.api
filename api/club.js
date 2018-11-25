@@ -35,6 +35,7 @@ router.get('/list-unused', async (ctx, next) => {
 router.post('/list', authenticate, async (ctx, next) => {
   const user = ctx.request.user;
   user.slotPreference = ctx.request.body.clubs;
+  user.locations = ctx.request.body.locations;
   await user.save();
   ctx.body = user.slotPreference;
   await next();

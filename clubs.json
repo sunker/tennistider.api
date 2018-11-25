@@ -22,7 +22,7 @@
         "location": "Stockholm",
         "image": "padelverket.jpg",
         "url": "https://www.matchi.se/book/listSlots?wl=&sport=5&facility=121&date=[year]-[month]-[day]",
-        "daysAhead": 7
+        "daysAhead": 14
       },
       {
         "id": 10,
@@ -31,7 +31,7 @@
         "location": "Stockholm",
         "image": "ekeropadel.jpg",
         "url": "https://www.matchi.se/book/listSlots?wl=&sport=5&facility=95&date=[year]-[month]-[day]",
-        "daysAhead": 7
+        "daysAhead": 14
       },
       {
         "id": 35,
@@ -49,7 +49,7 @@
         "location": "Stockholm",
         "image": "pdlcenter.jpg",
         "url": "https://www.matchi.se/book/listSlots?wl=&sport=5&facility=81&date=[year]-[month]-[day]",
-        "daysAhead": 1
+        "daysAhead": 14
       },
       {
         "id": 31,
@@ -57,7 +57,16 @@
         "name": "PDL Center Göteborg",
         "image": "pdlcentergoteborg.jpg",
         "url": "https://www.matchi.se/book/listSlots?wl=&sport=5&facility=131&date=[year]-[month]-[day]",
-        "daysAhead": 2,
+        "daysAhead": 14,
+        "location": "Göteborg"
+      },
+      {
+        "id": 60,
+        "include": false,
+        "name": "Padelfabriken",
+        "image": "padelfabriken.jpg",
+        "url": "https://www.matchi.se/book/listSlots?wl=&sport=5&facility=207&date=[year]-[month]-[day]",
+        "daysAhead": 14,
         "location": "Göteborg"
       }
     ],
@@ -95,7 +104,7 @@
         "location": "Stockholm",
         "image": "hagatennis.jpg",
         "url": "https://www.matchi.se/book/schedule?facilityId=110&date=[year]-[month]-[day]&sport=1&indoor=true&wl=",
-        "daysAhead": 3
+        "daysAhead": 7
       },
       {
         "id": 7,
@@ -393,6 +402,33 @@
         "url": "https://www.matchi.se/book/schedule?facilityId=136&date=[year]-[month]-[day]&sport=1&indoor=true&wl=",
         "daysAhead": 14,
         "location": "Stockholm"
+      },
+      {
+        "id": 61,
+        "include": false,
+        "name": "Gamlestadshallen",
+        "image": "Gamlestadshallen.jpg",
+        "url": "https://www.matchi.se/book/schedule?facilityId=146&date=[year]-[month]-[day]&sport=1&indoor=true&wl=",
+        "daysAhead": 14,
+        "location": "Göteborg"
+      },
+      {
+        "id": 62,
+        "include": false,
+        "name": "Ullevi Tennisklubb",
+        "image": "ullevitennisklubb.jpg",
+        "url": "https://www.matchi.se/book/schedule?facilityId=184&date=[year]-[month]-[day]&sport=1&indoor=true&wl=",
+        "daysAhead": 14,
+        "location": "Göteborg"
+      },
+      {
+        "id": 63,
+        "include": false,
+        "name": "Högsbohöjds Tennisklubb",
+        "image": "hogsbohojdstennisklubb.jpg",
+        "url": "https://www.matchi.se/book/schedule?facilityId=9&date=[year]-[month]-[day]&sport=1&indoor=true&wl=",
+        "daysAhead": 14,
+        "location": "Göteborg"
       }
     ],
     "enskede": {
