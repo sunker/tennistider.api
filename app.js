@@ -16,7 +16,7 @@ const Koa = require('koa'),
   cors = require('koa2-cors');
 (app = new Koa()), (router = new Router());
 
-app.use(accesslog());
+// app.use(accesslog());
 app.use(cors());
 app.use(bodyparser());
 app.use(koaHealth);
