@@ -21,6 +21,7 @@ const slotSchema = new Schema({
   clubName: String,
   price: Number,
   courtNumber: Number,
+  courtName: String,
   surface: String,
   link: String,
   createdAt: { type: Date, expires: '30d', default: Date.now }
@@ -144,8 +145,10 @@ slotSchema.statics = {
                 endTime: slot.timeSlot.endTime,
                 clubId: slot.clubId,
                 clubName: slot.clubName,
+                courtName: slot.courtName,
                 price: slot.price,
                 courtNumber: slot.courtNumber,
+                sport: slot.sport,
                 surface: slot.surface,
                 link: slot.link,
                 type: slot.type

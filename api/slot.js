@@ -17,7 +17,7 @@ const getUpcomingSlots = async () => {
 router.get('/upcoming', async (ctx, next) => {
   ctx.body = ctx.request.query.clubs
     ? await Slot.getUpcomingByClubs(ctx.request.query.clubs.split(','))
-    : await getUpcomingSlots();
+    : await Slot.getUpcoming(); //getUpcomingSlots();
 
   await next();
 });
