@@ -57,7 +57,7 @@ slotSchema.methods = {
       '-' +
       this.endTime.toFixed(2).toString() +
       '_' +
-      (this.surface ? this.surface : 'uknownsurface') +
+      (this.surface ? this.surface.replace(' ', '-') : 'uknownsurface') +
       '_' +
       this.courtNumber +
       '_' +

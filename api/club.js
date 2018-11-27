@@ -10,6 +10,11 @@ router.get('/list', async (ctx, next) => {
   await next();
 });
 
+router.get('/v2/list', async (ctx, next) => {
+  ctx.body = await clubService.getAllV2Clubs();
+  await next();
+});
+
 router.get('/list-current', async (ctx, next) => {
   const users = await User.getAll();
   const activeClubIds = _.unique(
