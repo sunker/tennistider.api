@@ -23,6 +23,7 @@ const slotSchema = new Schema({
   courtNumber: Number,
   courtName: String,
   surface: String,
+  sport: String,
   link: String,
   createdAt: { type: Date, expires: '30d', default: Date.now }
 });
