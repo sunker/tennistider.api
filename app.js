@@ -12,6 +12,7 @@ const Koa = require('koa'),
   userRoute = require('./api/user'),
   slotRoute = require('./api/slot'),
   clubRoute = require('./api/club'),
+  clubV2Route = require('./api/clubV2'),
   authRoute = require('./api/auth'),
   cors = require('koa2-cors');
 (app = new Koa()), (router = new Router());
@@ -25,6 +26,7 @@ app.use(metrics);
 router.use('/api/user', userRoute.routes());
 router.use('/api/slot', slotRoute.routes());
 router.use('/api/club', clubRoute.routes());
+router.use('/api/club/v2', clubV2Route.routes());
 router.use('/api/users', authRoute.routes());
 
 mongoose

@@ -6,7 +6,7 @@ const router = require('koa-router')(),
   authenticate = require('../middleware/authenticate');
 
 router.get('/list', async (ctx, next) => {
-  ctx.body = await clubService.getAllClubs();
+  ctx.body = await clubService.getAllV2Clubs();
   await next();
 });
 
@@ -16,7 +16,7 @@ router.get('/list-current', async (ctx, next) => {
     _.flatten(users.map(user => user.slotPreference.map(x => x.clubId)))
   ).filter(clubId => clubId > 0);
   ctx.body = clubService
-    .getAllClubs()
+    .getAllV2Clubs()
     .filter(club => activeClubIds.includes(club.id));
   await next();
 });
@@ -27,7 +27,7 @@ router.get('/list-unused', async (ctx, next) => {
     _.flatten(users.map(user => user.slotPreference.map(x => x.clubId)))
   ).filter(clubId => clubId > 0);
   ctx.body = clubService
-    .getAllClubs()
+    .getAllV2Clubs()
     .filter(club => !activeClubIds.includes(club.id));
   await next();
 });
