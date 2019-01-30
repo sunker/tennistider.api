@@ -26,7 +26,7 @@ clubService.getAllClubs = () => {
     Object.assign({}, enskede, { tag: 'enskede', url: enskede.bookingUrl })
   );
 
-  return result;
+  return result.map(addTagname);
 };
 
 clubService.getAllV2Clubs = () => {
@@ -49,7 +49,21 @@ clubService.getAllV2Clubs = () => {
     Object.assign({}, enskede, { tag: 'enskede', url: enskede.bookingUrl })
   );
 
-  return result;
+  return result.map(addTagname);
 };
+
+function addTagname(c) {
+  return {
+    ...c,
+    tagName: c.name
+      .replace(/å/g, 'a')
+      .replace(/Å/g, 'A')
+      .replace(/ä/g, 'a')
+      .replace(/Ä/g, 'A')
+      .replace(/ö/g, 'o')
+      .replace(/Ö/g, 'O')
+      .replace(/ /g, '-')
+  };
+}
 
 module.exports = clubService;

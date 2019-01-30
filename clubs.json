@@ -501,6 +501,15 @@
         "url": "https://www.matchi.se/book/schedule?facilityId=184&date=[year]-[month]-[day]&sport=1&indoor=true&wl=",
         "daysAhead": 14,
         "location": "Göteborg"
+      },
+      {
+        "id": 63,
+        "include": false,
+        "name": "Hellas TK",
+        "image": "hellas.jpg",
+        "url": "https://www.matchi.se/book/schedule?facilityId=297&date=[year]-[month]-[day]&sport=1&indoor=true&wl=",
+        "daysAhead": 14,
+        "location": "Stockholm"
       }
     ],
     "enskede": {

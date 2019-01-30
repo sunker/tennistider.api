@@ -17,6 +17,8 @@ const Koa = require('koa'),
   cors = require('koa2-cors');
 (app = new Koa()), (router = new Router());
 
+const client = require('prom-client');
+
 // app.use(accesslog());
 app.use(cors());
 app.use(bodyparser());
@@ -44,3 +46,9 @@ mongoose
 app.use(router.routes());
 app.use(router.allowedMethods());
 app.listen(process.env.PORT || '3011');
+
+const gauge = new client.Gauge({ name: 'haxxen', help: 'metric_help' });
+gauge.set(2000);
+setInterval(function() {
+  gauge.set(1000);
+}, 1000);
