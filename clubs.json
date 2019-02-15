@@ -1,20 +1,5 @@
 {
   "endpoints": {
-    "hellas": {
-      "id": 1,
-      "name": "Hellas TK",
-      "image": "hellas.jpg",
-      "url": "http://www.commodusnet.net/kund/adminschedule.php?YEAR=[year]&MONTH=[month]&DAY=[day]&sess_adm_club_id=19&indoors=1",
-      "daysAhead": 14,
-      "include": true,
-      "location": "Stockholm",
-      "selectors": {
-        "root": "#contentSmall table.border_collapse tr",
-        "time": "td:nth-child(1n) p b",
-        "activity": "a.book center",
-        "court": "table.border_collapse tr:nth-child(1n) td:nth-child([columnIndex]n) p b"
-      }
-    },
     "matchiPadel": [{
         "id": 4,
         "include": false,
@@ -503,7 +488,7 @@
         "location": "Göteborg"
       },
       {
-        "id": 63,
+        "id": 1,
         "include": false,
         "name": "Hellas TK",
         "image": "hellas.jpg",
