@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "facilityId":"297",
+    "facilityId": "297",
     "location": "Stockholm",
     "name": "Hellas TK",
     "image": "hellas.jpg",
@@ -428,6 +428,22 @@
     "facilityId": "225",
     "name": "Norrtälje Padelcenter",
     "image": "NorrtaljePadelcenter.jpg",
+    "daysAhead": 14,
+    "location": "Stockholm"
+  },
+  {
+    "id": 74,
+    "facilityId": "363",
+    "name": "Gustavsbergs TK",
+    "image": "gustavsbergs.jpg",
+    "daysAhead": 14,
+    "location": "Stockholm"
+  },
+  {
+    "id": 75,
+    "facilityId": "386",
+    "name": "Padel22 Värmdö",
+    "image": "padel22.jpg",
     "daysAhead": 14,
     "location": "Stockholm"
   }
