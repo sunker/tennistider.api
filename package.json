@@ -16,7 +16,7 @@
     "cheerio": "^0.22.0",
     "dotenv": "^4.0.0",
     "gravatar": "^1.6.0",
-    "jsonwebtoken": "^8.3.0",
+    "jsonwebtoken": "^9.0.0",
     "koa": "^2.2.0",
     "koa-accesslog": "^0.0.2",
     "koa-bodyparser": "^4.2.0",
